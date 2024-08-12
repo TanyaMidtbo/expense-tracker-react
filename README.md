@@ -14,6 +14,17 @@ Teacher: Reza Dianat
 
 University: Kristiania University College (Høyskolen Kristiania)
 
+Additional materials:
 
+The Road to React by Robin Wieruch
+
+https://www.youtube.com/@CodeWithClinton
+
+### Technologies
+React Vite
+
+Bootstrap
+
+Copilot
 
 ### Conclusion

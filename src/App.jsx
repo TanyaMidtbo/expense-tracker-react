@@ -28,6 +28,10 @@ function App() {
     },
   ]);
 
+  const addItem = (data) => {
+    setExpenses(() => [...expenses, data])
+  }
+
   const deleteItem = (id) => {
     setExpenses(expenses.filter((expense) => expense.id !== id));
   };
@@ -40,7 +44,7 @@ function App() {
 
   return (
     <>
-      <ExpenseForm />
+      <ExpenseForm addExpense = {addItem}/>
       <ExpenseFilter filterItem={filterItem} />
       <ExpenseList items={expenses} deleteItem={deleteItem} />
     </>

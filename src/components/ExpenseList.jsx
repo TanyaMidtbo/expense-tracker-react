@@ -21,7 +21,7 @@ const ExpenseList = ({ items, deleteItem }) => {
         ))}
         <tr>
           <td><h3>Total</h3></td>
-          <td><h3>${items.reduce((total, item) => total + item.amount, 0).toFixed(2)}</h3></td>
+          <td><h3>{items.reduce((total, item) => total + parseInt(item.amount), 0).toFixed(2)} nok</h3></td>
         </tr>
       </tbody>
     </table>
