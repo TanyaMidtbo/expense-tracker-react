@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import ExpenseList from "./components/ExpenseList";
 import ExpenseFilter from "./components/ExpenseFilter";
+import ExpenseForm from "./components/ExpenseForm";
 
 function App() {
   const [expenses, setExpenses] = useState([
@@ -32,12 +33,15 @@ function App() {
   };
 
   const filterItem = (item_category) => {
-    setExpenses(expenses.filter(expense => expense.category == item_category))
-  }
+    setExpenses(
+      expenses.filter((expense) => expense.category == item_category)
+    );
+  };
 
   return (
     <>
-      <ExpenseFilter filterItem = {filterItem}/>
+      <ExpenseForm />
+      <ExpenseFilter filterItem={filterItem} />
       <ExpenseList items={expenses} deleteItem={deleteItem} />
     </>
   );
