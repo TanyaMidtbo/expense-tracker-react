@@ -11,8 +11,8 @@ const ExpenseList = ({ items, deleteItem }) => {
         </tr>
       </thead>
       <tbody>
-        {items.map((item) => (
-          <tr key = {item.id}>
+        {items.map((item, index) => (
+          <tr key = {index}>
             <td>{item.description}</td>
             <td>{item.amount}</td>
             <td>{item.category}</td>

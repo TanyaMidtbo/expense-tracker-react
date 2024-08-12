@@ -6,26 +6,7 @@ import ExpenseForm from "./components/ExpenseForm";
 
 function App() {
   const [expenses, setExpenses] = useState([
-    {
-      id: 1,
-      description: "Bread",
-      amount: 40,
-      category: "grocery",
-    },
-    {
-      id: 2,
-      description: "Monthly Ruter pass",
-      amount: 50,
-      category: "transportation",
-    },
-    { id: 3, description: "Electricity bill", amount: 60, category: "housing" },
-    { id: 4, description: "Dress", amount: 70, category: "clothes" },
-    {
-      id: 5,
-      description: "1 spotify subscription",
-      amount: 85,
-      category: "other",
-    },
+
   ]);
 
   const addItem = (data) => {
