@@ -9,7 +9,7 @@ function App() {
       id: 1,
       description: "Bread",
       amount: 40,
-      category: "groceries",
+      category: "grocery",
     },
     {
       id: 2,
@@ -31,8 +31,13 @@ function App() {
     setExpenses(expenses.filter((expense) => expense.id !== id));
   };
 
+  const filterItem = (item_category) => {
+    setExpenses(expenses.filter(expense => expense.category == item_category))
+  }
+
   return (
     <>
+      <ExpenseFilter filterItem = {filterItem}/>
       <ExpenseList items={expenses} deleteItem={deleteItem} />
     </>
   );
