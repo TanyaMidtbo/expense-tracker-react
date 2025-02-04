@@ -22,8 +22,6 @@ https://www.youtube.com/@CodeWithClinton
 
 Deployed on Netlify: https://expense-tracker-react-vite.netlify.app/
 
-GitHub: https://github.com/TetianaKoliesnik/expense-tracker-react
-
 ### Technologies
 React Vite
 
